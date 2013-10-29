@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <script src="/build/build.js"></script>
+    <script>
+      var ObjectDocument = require('object-document');
+      var test = require('simple-test');
+      var dom = require('dom-helper');
+
+      test('ObjectDocument.createElement(tag)', function () {
+        var objectDiv = ObjectDocument.createElement('div');
+
+        objectDiv.id = 'div';
+        objectDiv.text = 'div';
+        document.body.appendChild(objectDiv.element);
+        test.eq(document.getElementById('div'), objectDiv.element);
+      });
+      </script>
+  </body>
+</html>

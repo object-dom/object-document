@@ -1,0 +1,23 @@
+{
+  "name": "object-document",
+  "repo": "object-element/object-document",
+  "description": "Object document",
+  "version": "0.0.1",
+  "keywords": [],
+  "paths": ["../"],
+  "local": [],
+  "dependencies": {
+    "object-dom/object-element": "*",
+    "object-dom/object-div-element": "*"
+  },
+  "development": {
+    "shallker/simple-test": "*",  
+    "shallker/dom-helper": "*"  
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/object-document.js"
+  ]
+}
