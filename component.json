@@ -11,7 +11,8 @@
     "object-dom/object-div-element": "*"
   },
   "development": {
-    "shallker/simple-test": "*",  
+    "object-dom/object-element-events": "*",
+    "shallker/simple-test": "*",
     "shallker/dom-helper": "*"  
   },
   "license": "MIT",
