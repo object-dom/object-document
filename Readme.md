@@ -15,6 +15,8 @@
 #### .wrapElements(Array elements);
 #### .createElement(String tag);
 
+#### ObjectDocument inherits all apis from objectElement
+
 ## License
 
   MIT
