@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <script src="../build/build.js"></script>
+    <script>
+      require('object-element-events');
+
+      var ObjectDocument = require('object-document');
+      var test = require('simple-test');
+      var dom = require('dom-helper');
+
+      test('ObjectDocument.on(event, callback)', function (done) {
+        ObjectDocument.on('click', onClickDocument);
+
+        function onClickDocument(click) {
+          console.log('click', click, this);
+          done();
+        }
+      });
+      </script>
+  </body>
+</html>
